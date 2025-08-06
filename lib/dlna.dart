@@ -560,21 +560,12 @@ class DLNAManager {
     } else {
       _socket_server!.joinMulticast(UPNP_AddressIPv4);
     }
-    final r = Random();
     final socket_client = await RawDatagramSocket.bind(
       InternetAddress.anyIPv4,
       0,
     );
     _sender = Timer.periodic(Duration(seconds: 3), (Timer t) async {
-      final n = r.nextDouble();
-      var st = "ssdp:all";
-      if (n > 0.3) {
-        if (n > 0.6) {
-          st = "urn:schemas-upnp-org:service:AVTransport:1";
-        } else {
-          st = "urn:schemas-upnp-org:device:MediaRenderer:1";
-        }
-      }
+      String st = "urn:schemas-upnp-org:device:MediaRenderer:1";
       String msg =
           'M-SEARCH * HTTP/1.1\r\n' +
           'ST: $st\r\n' +
