@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:dlna_dart/dlna.dart';
-import 'package:dlna_dart/xmlParser.dart';
+import 'package:dlna_tv_dart/dlna.dart';
+import 'package:dlna_tv_dart/xmlParser.dart';
 import 'package:flutter/material.dart';
 
 class DlnaDartDemo extends StatefulWidget {

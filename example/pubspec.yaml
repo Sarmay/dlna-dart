@@ -8,7 +8,7 @@ environment:
   flutter: ">=3.27.0"
 
 dependencies:
-  dlna_dart:
+  dlna_tv_dart:
     path: ../
   flutter:
     sdk: flutter

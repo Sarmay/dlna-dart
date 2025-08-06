@@ -1,4 +1,4 @@
-# dlna_dart
+# dlna_tv_dart
 
 simple dlna client
 
@@ -6,7 +6,7 @@ simple dlna client
 
 ```dart
 import 'dart:async';
-import 'package:dlna_dart/dlna.dart';
+import 'package:dlna_tv_dart/dlna.dart';
 
 main(List<String> args) async {
   final searcher = DLNAManager();
